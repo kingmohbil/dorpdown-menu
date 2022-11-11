@@ -1,0 +1,25 @@
+{
+  "name": "dorpdown-menu",
+  "version": "1.0.0",
+  "description": "in this project the website should have a dropdown menu, image slider as well",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "pretty": "prettier --write"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingmohbil/dorpdown-menu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingmohbil/dorpdown-menu/issues"
+  },
+  "homepage": "https://github.com/kingmohbil/dorpdown-menu#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
