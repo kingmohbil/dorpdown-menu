@@ -1,0 +1,101 @@
+/* the imported fonts weights are 300 / 400 / 600 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --gray: #f4f4f5;
+  --dark-gray: #d1d5db;
+  --large-font-size: 36px;
+  --normal-font-size: 24px;
+}
+.page-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 20fr;
+}
+.top-bar {
+  position: relative;
+  display: flex;
+  padding: 1em 5em;
+  justify-content: space-between;
+  background-color: var(--gray);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.top-bar-btns {
+  font-size: var(--large-font-size);
+  border: none;
+  background: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+.drop-down-menu {
+  position: absolute;
+  top: 100%;
+  background-color: var(--dark-gray);
+  pointer-events: none;
+  padding: 1em 1em 1em 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+  pointer-events: none;
+}
+.drop-down-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+.downloads-drop-down {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  padding-left: 1em;
+}
+.drop-down-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  font-size: var(--normal-font-size);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color: black;
+}
+a:active {
+    color: black;
+}
+.login-form{
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+input[type="email"], 
+input[type="password"]{
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: var(--normal-font);
+}
+.email-container, 
+.password-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
